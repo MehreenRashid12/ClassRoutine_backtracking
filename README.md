@@ -4,7 +4,7 @@
 
 This program takes input (teachers' info, their free slots and the courses they are assigned to) from an excel file and makes class routines which satisfies all constraints.
 
-## Requirements
+## Running the program
 
 - In order to run this code, node js and npm needs to be installed. These can be installed by the following command:
 
