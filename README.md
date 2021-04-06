@@ -2,7 +2,7 @@
 
 ## About
 
-This program takes input (teachers' info, their free slots and the courses they are assigned to) from an excel file and makes class routines which satisfies all constraints.
+This program takes input (teachers' info, their free slots and the courses they are assigned to) from an excel file and makes class routines which satisfy all constraints.
 
 ## Running the program
 
