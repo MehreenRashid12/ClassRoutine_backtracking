@@ -1,7 +1,9 @@
+//to access the excel file
+
 const xlsx = require('xlsx');
 const path = require('path');
 
-const book = xlsx.readFile(path.join(__dirname,'','input.xlsx'));
+const book = xlsx.readFile(path.join(__dirname,'sheets','input.xlsx'));
 
 //console.log(book.SheetNames);
 
@@ -22,3 +24,4 @@ module.exports = {
 	'Courses' : courses_json,
 	'Slots' : slots_json
 };
+

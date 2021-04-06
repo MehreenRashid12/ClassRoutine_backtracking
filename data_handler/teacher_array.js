@@ -5,9 +5,11 @@ const teachers = sheets['Teachers'];
 const courses = sheets['Courses'];
 const slots = sheets['Slots'];
 
+//array for storing the inforamtion of all teachers
 var teacher_array = [];
 
 for(var i=0; i<teachers.length; i++){
+	//object for string information of a teacher
 	const teacher={
 		'initial' : null,
 		'name' : null,
@@ -19,14 +21,14 @@ for(var i=0; i<teachers.length; i++){
 			'Wednesday' : [],
 			'Thursday' : []
 		},
-		'available' : true
+		'available' : [true, true, true, true, true] //for the five slots per day
 
 	}; 
 
 	teacher.initial = teachers[i]['Teacher Initial'];
 	teacher.name = teachers[i]['Full Name'];
 	
-
+	//all courses which a teacher is assigned to
 	for(var j=0; j<courses.length; j++){
 		if(courses[j]['Teacher Initial'] == teachers[i]['Teacher Initial']){
 			var no_of_courses = Object.keys(courses[j]).length;
@@ -37,6 +39,7 @@ for(var i=0; i<teachers.length; i++){
 		}
 	}
 
+	//all free slots of a teacher
 	for(var j=0; j<slots.length; j++){
 		if(slots[j].Teacher == teachers[i]['Teacher Initial']){
 			var separate;
