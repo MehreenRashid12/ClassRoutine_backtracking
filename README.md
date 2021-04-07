@@ -9,12 +9,15 @@ This program takes input (teachers' info, their free slots and the courses they 
 - In order to run this code, node js and npm needs to be installed. These can be installed by the following command:
 
 		sudo apt install nodejs
-		sudo apt install npm
 
 - In both the project folder and data_handler folder the following commands need to be executed:
 
-		npm i
+		npm init
+
+		npm install express --save
+
+		npm install moment --save
 
 - For running the program, the follwing command needs to be run from the project's main folder:
 
-		npm start
+		node index.js
