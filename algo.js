@@ -1,4 +1,4 @@
-const arrays = require('./data_handler/arrays');
+const arrays = require('./data_handler');
 const moment = require('moment');
 
 //geeting teacher, course and year arrays
@@ -35,9 +35,9 @@ const routine = {
 
 //find the start and end of a slot
 function getStartEnd(i){
-	var clone_slot1 = day_slots[i].clone();
+	var clone_slot = day_slots[i].clone();
 	slot_start = day_slots[i];
-	tslot_end = clone_slot1;
+	tslot_end = clone_slot;
 	tslot_end.add(1.5,'hours');
 	var clone_slot = day_slots[i].clone();
 	lslot_end = clone_slot;
