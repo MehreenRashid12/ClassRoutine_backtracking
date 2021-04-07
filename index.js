@@ -1,3 +1,3 @@
-const routine = require('./algo');
+const routine = require('./code');
 
 console.log(routine);
