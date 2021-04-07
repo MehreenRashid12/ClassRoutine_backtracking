@@ -11,7 +11,7 @@ This program takes input (teachers' info, their free slots and the courses they 
 		sudo apt install nodejs
 		sudo apt install npm
 
-- In both the project folder and data_handler folder the following commands need to be executed:
+- In the main project folder, code folder and data_handler folder the following commands need to be executed:
 
 		npm i
 
